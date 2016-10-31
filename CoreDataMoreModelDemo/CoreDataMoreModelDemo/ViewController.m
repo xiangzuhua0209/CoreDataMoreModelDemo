@@ -34,6 +34,14 @@
     [self addPerson:person Dog:dog];
     //查询
     [self selectDataWithEntityName:@"PersonModel" key:@"name" value:@"云中六" sortKey:@"sex"];
+    //更改
+    [self changeDataWithEntityName:@"PersonModel" key:@"name" oldValue:@"云中六" changeValue:@"刚刚刚" sortKey:@"sex"];
+    //查询
+    [self selectDataWithEntityName:@"PersonModel" key:@"name" value:@"刚刚刚" sortKey:@"sex"];
+    //删除
+    [self deletDataWithEntityName:@"PersonModel" key:@"name" value:@"刚刚刚" sortKey:@"sex"];
+    //查询
+    [self selectDataWithEntityName:@"PersonModel" key:@"name" value:@"刚刚刚" sortKey:@"sex"];
 }
 
 
